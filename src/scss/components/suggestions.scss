@@ -1,0 +1,25 @@
+#searchbar {
+  height: 20px;
+  width: 150px;
+  background: none;
+  border: none;
+  color: $white;
+}
+
+.suggestions-list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background: $darkgrey;
+  li {
+    background: $darkgrey;
+    z-index: 50;
+  }
+  li:nth-child(even) {
+    background: $black;
+  }
+}
+
+.hide {
+  display: none;
+}

@@ -1,0 +1,182 @@
+//MOVIES "MAIN" PAGE
+.main-title {
+  height: 720px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.main-title-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  background: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(14,15,15,1) 85%);
+  > h1 { font-size: 3rem; font-weight: 700; color: $white; }
+  .inline {
+    display: flex;
+    justify-content: center;
+  > .main-title-info {
+    margin-left: 20px;
+  }
+  }
+  img {
+    width: 185px;
+    border-radius: 5px;
+  }
+  h2 {
+    font-size: 2.7rem; 
+    font-weight: 700;
+    color: $white;
+    margin: 0; 
+  }
+}
+
+.backdrop-card-list {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  > li {
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: $white;
+    > div {
+      background: rgba($darkgrey, 0.8);
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.list-container {
+  width: 1000px;
+  margin: 0 auto;
+  > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    li {
+      width: 185px;
+      margin: 10px 0;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.2s ease-out;
+      div {
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+      }
+      img {
+        border-radius: 5px;
+        width: 185px;
+        height: 278px;
+      }
+    }
+    li:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+
+
+// MOVIE HEADER
+.modal {
+  background: radial-gradient(ellipse at center, rgba(35, 36, 41, 0.85) 0%,rgba(35, 36, 41, 0.95) 100%);
+  z-index: 5;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  > button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: $ltgrey;
+  }
+}
+
+// MAIN BODY OF MAIN
+.movie-main {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+// FACT-BOX
+.factbox {
+  background: $white;
+  color: $black;
+  border-radius: 5px;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.factbox-heading {
+  color: $primary-color;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.factbox-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.column {
+  flex-direction: column;
+  > li > div {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    > p { color: $ltgrey; }
+    > h3 { font-weight: 700; }
+    > * {
+      margin-right: 5px;
+    }
+  }
+}
+
+.credits-card {
+  width: 175px;
+  background: $white;
+  color: $black;
+  box-shadow: $card-shadow;
+  border-radius: 5px;
+  > div > img {
+    border-radius: 5px 5px 0 0;
+  }
+} 
+
+.credit-picture {
+  width: 175px;
+}
+
+.ShowCast {
+  font-size: 1rem;
+  font-weight: 400;
+  border: none;
+  background: transparent;
+  color: $white;
+  cursor: pointer;
+}
+
+.similar-thumbnail {
+  border-radius: 5px;
+  transition: all 0.2s ease-out;
+}
+.similar-thumbnail:hover {
+  transform: scale(1.1);
+}

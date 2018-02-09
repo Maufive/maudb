@@ -1,0 +1,26 @@
+#navbar-container {
+  height: 50px;
+  background: $darkgrey;
+  color: $white;
+}
+
+#navbar-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#brand {
+  font-weight: 700;
+}
+#brand-logo {
+  border: 1px solid $white;
+  border-radius: 50%;
+  padding: 2px;
+  font-size: 2.1rem;
+}
