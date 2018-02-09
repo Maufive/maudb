@@ -1,0 +1,115 @@
+@import './variables';
+@import './animations';
+@import './components/navbar';
+@import './components/header';
+@import './components/jumbotron';
+@import './components/main';
+@import './components/card';
+@import './components/editors-card';
+@import './components/movie';
+@import './components/suggestions';
+@import './components/footer';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: $darkgrey;
+  color: $white;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+svg:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  font-weight: 400;
+  margin-bottom: 3vh;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+a {
+  color: $ltgrey;
+  transition: color 0.2s ease-out;
+  text-decoration: none;
+  padding: 3px;
+}
+a:visited {
+  color: $ltgrey;
+}
+a:hover {
+  color: $white;
+}
+
+.container {
+  margin-bottom: $marginY;
+  height: 100%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating {
+  background-color: $primary-color;
+  padding: 3px 10px;
+}
+
+.trigger-enter {
+  opacity: 1;
+}
+
+.divider {
+  width: 100%;
+  color: $ltgrey;
+  border-bottom: 1px solid rgba($ltgrey, 0.1);
+  margin: $marginY auto;
+}
+
+.gray { //span för release-år (stor)
+  color: $ltgrey;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+.small { // SPAN för release-år
+  font-size: 1rem;
+}
+
+.primary-link {
+  color: $black;
+}
+.primary-link:hover {
+  color: $ltgrey;
+}
+.primary-link:visited {
+  color: $black;
+}
+.primary-link:visited:hover {
+  color: $black;
+}
+
+.inline-list { 
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
