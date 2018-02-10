@@ -11,7 +11,7 @@ class App extends Component {
   render() {
     const movie = 'movie';
     const tv = 'tv';
-    const people = 'people'
+    const people = 'people';
     return (
       <Router>
         <div>
@@ -21,18 +21,25 @@ class App extends Component {
             <Route path="/movies" exact component={Movies} />
             <Route
               path="/tv/:id"
-              render={({ match, location }) => <Movie type={tv} match={match} location={location} />}
+              render={({ match, location }) => (
+                <Movie type={tv} match={match} location={location} />
+              )}
             />
             <Route
               path="/movie/:id"
-              render={({ match, location }) => <Movie type={movie} match={match} location={location} />}
+              render={({ match, location }) => (
+                <Movie type={movie} match={match} location={location} />
+              )}
             />
             <Route path="/tv" exact component={Tv} />
-            <Route 
+            <Route
               path="/people/:id"
-              render={({ match, location }) => <People type={people} match={match} location={location} />}
+              render={({ match, location }) => (
+                <People type={people} match={match} location={location} />
+              )}
             />
             <Route path="/people" exact component={People} />
+            <Route render={() => <p>Not Found</p>} />
           </Switch>
         </div>
       </Router>

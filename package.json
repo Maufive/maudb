@@ -1,7 +1,6 @@
 {
   "name": "moviedb-app",
   "version": "0.1.0",
-  "homepage": "https://maufive.github.io/maudb",
   "private": true,
   "dependencies": {
     "autoprefixer": "7.1.6",
