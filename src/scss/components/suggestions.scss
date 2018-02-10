@@ -14,9 +14,12 @@
   li {
     background: $darkgrey;
     z-index: 50;
-  }
-  li:nth-child(even) {
-    background: $black;
+    padding: 0px;
+    line-height: 1;
+    height: 100%;
+    > a {
+      padding: 0px;
+    }
   }
 }
 

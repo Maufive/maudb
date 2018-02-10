@@ -9,7 +9,7 @@ const Navbar = () => (
       <li id="brand"><Link to="/"><MdGoat id="brand-logo" /> GOAT TV</Link></li>
       <li><Link to="/movies">MOVIES</Link></li>
       <li><Link to="/tv">TV SHOWS</Link></li>
-      <li>PEOPLE</li>
+      <li><Link to="/people">PEOPLE</Link></li>
       <SearchBar />
     </ul>
   </header>

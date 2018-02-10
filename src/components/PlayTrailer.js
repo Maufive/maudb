@@ -21,7 +21,7 @@ export default class PlayTrailer extends Component {
     this.getTrailer();
   }
 
-  componentWillReceiveProps(nextProps) {
+  componentWillgitReceiveProps(nextProps) {
     this.getTrailer(nextProps.id)
   }
 

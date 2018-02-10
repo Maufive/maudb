@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import '../scss/index.scss';
 import Navbar from './Navbar';
 import Home from './Home';
 import Movies from './Movies';
 import Movie from './Movie';
 import Tv from './Tv';
+import People from './People';
+
 class App extends Component {
   render() {
     const movie = 'movie';
     const tv = 'tv';
+    const people = 'people'
     return (
       <Router>
         <div>
@@ -26,6 +28,11 @@ class App extends Component {
               render={({ match, location }) => <Movie type={movie} match={match} location={location} />}
             />
             <Route path="/tv" exact component={Tv} />
+            <Route 
+              path="/people/:id"
+              render={({ match, location }) => <People type={people} match={match} location={location} />}
+            />
+            <Route path="/people" exact component={People} />
           </Switch>
         </div>
       </Router>
