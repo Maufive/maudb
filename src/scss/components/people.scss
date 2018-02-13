@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 .backdrop-card-list.people {
   justify-content: space-between;
   li {
@@ -10,7 +12,7 @@
   width: 800px;
   display: flex;
   flex-direction: column;
-  margin: $marginY auto;
+  margin: 3vh auto;
 }
 
 #person {

@@ -1,0 +1,42 @@
+.backdrop-card-list.people {
+  justify-content: space-between; }
+  .backdrop-card-list.people li {
+    width: 185px;
+    height: 250px; }
+
+#person-container {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  margin: 3vh auto; }
+
+#person {
+  display: flex;
+  padding: 25px;
+  background: #F4F4F4;
+  color: #0E0F0F;
+  border-radius: 10px 10px 0 0; }
+  #person img {
+    height: 278px;
+    border-radius: 5px;
+    margin-right: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+#known-for-container {
+  margin: 5vh 0; }
+
+.known-for-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5vh; }
+  .known-for-list > li {
+    width: 154px;
+    background: #F4F4F4;
+    color: #091C24;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    font-size: 0.8rem;
+    border-radius: 5px; }
+    .known-for-list > li h3, .known-for-list > li p {
+      padding: 5px; }
+    .known-for-list > li h3 {
+      font-weight: 700; }
