@@ -1,16 +1,40 @@
 @import './variables';
-// @import './animations';
-// @import './components/navbar';
-// @import './components/header';
-// @import './components/jumbotron';
-// @import './components/main';
-// @import './components/card';
-// @import './components/editors-card';
-// @import './components/movie';
-// @import './components/people';
-// @import './components/suggestions';
-// @import './components/footer';
+@import './components/navbar';
+@import './components/header';
+@import './components/jumbotron';
+@import './components/main';
+@import './components/card';
+@import './components/editors-card';
+@import './components/movie';
+@import './components/people';
+@import './components/suggestions';
+@import './components/footer';
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+// COLORS
+$white: #fefefe;
+$black: #091C24;
+$ltgrey: #F4F4F4;
+$grey: #CFCFCF;
+$dark-purple: #17141f;
+$twitch-purple: #6441a4;
+$primary-color: #ff6347;
+$secondary-color: #BDDE5C;
+$darkgrey: #0E0F0F;
+
+// Fonts
+$bodyfont-size: 16px;
+$bodyfont-weight: normal;
+$bodycolor: $black;
+// Breakpoints
+$tablet-breakpoint: 1199px;
+$mobile-breakpoint: 767px;
+$small-mobile-breakpoint: 450px;
+// Shadow
+$card-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+0 6px 6px rgba(0, 0, 0, 0.23);
+// Spacing
+$marginY: 5vh;
 
 * {
   margin: 0;
@@ -24,9 +48,14 @@ body {
   margin: 0;
   padding: 0;
   background: $darkgrey;
-  color: $white;
+  color: $ltgrey;
   line-height: 1.5;
   box-sizing: border-box;
+}
+
+#root {
+  width: 1280px;
+  margin: 0 auto;
 }
 
 svg:hover {
@@ -47,16 +76,9 @@ h3 {
 }
 
 a {
-  color: $ltgrey;
-  transition: color 0.2s ease-out;
   text-decoration: none;
-  padding: 3px;
-}
-a:visited {
   color: $ltgrey;
-}
-a:hover {
-  color: $white;
+  transition: all 0.2s ease-in;
 }
 
 .container {
@@ -106,6 +128,15 @@ a:hover {
 }
 .primary-link:visited:hover {
   color: $black;
+}
+
+.secondary-link {
+  color: $darkgrey;
+  transition: all 0.2s ease-out;
+  display: inline;
+}
+.secondary-link:hover {
+  color: $primary-color;
 }
 
 .inline-list { 
